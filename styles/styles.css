@@ -63,7 +63,7 @@ p, .p1 {
     width: 610px;
     height: 50px;
     padding: 12px 30.5px;
-    background-image: url('images/search.jpg');
+    background-image: url('../images/search.jpg');
     background-repeat: no-repeat;
     background-position-x: right 20px;
     background-position-y: center;
