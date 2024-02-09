@@ -3,112 +3,129 @@
   <head>
     <meta charset="UTF-8">
     <title>Задание</title>
-    <link href="styles/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/index.css">
   </head>
   <body>
-    <header id="main-header">
-      <input type="search" id="search" placeholder="Поиск по всему...">
-      <div style="display: flex; gap: 10px; align-items: center; width: 295px; height: 50px;">
-        <img src="images/foto.png" style="height: max-content;">
+    <header id="main-header" class="main-header">
+      <input type="search" id="search" class="search" placeholder="Поиск по всему...">
+      <div class="user-info">
+        <img src="images/foto.png">
         <p>
-          <span style="font-weight: bold;">Константин Константинов</span>
-          <span style="font-size: 12px; color: #666666">Руководитель департамента</span>
+          <span class="user-name">Константин Константинов</span>
+          <span class="user-status">Руководитель департамента</span>
         </p>
       </div>
     </header>
-    <div id="left">
-      <nav id="left-sidebar">
+    <div id="left" class="left">
+      <nav id="left-sidebar" class="left-sidebar">
         <ul>
           <li>
             <img src="images/homeletter.svg">
+            <a href="404.html">
             Интранет портал
+            </a>
           </li>
           <li>
             <img src="images/staging.svg">
+            <a href="404.html">
             Управление обучением
+            </a>
           </li>
           <li class="current">
             <img src="images/list-ul.svg">
+            <a href="index.html">
             Расписание тренера
+            </a>
           </li>
           <li>
             <img src="images/books.svg">
+            <a href="404.html">
             Дистанционные курсы
+            </a>
           </li>
           <li>
             <img src="images/box-container.svg">
+            <a href="404.html">
             Карты развития
+            </a>
           </li>
           <li>
             <img src="images/bell-on.svg">
+            <a href="events.html">
             Обучающие мероприятия
+            </a>
           </li>
           <li>
             <img src="images/users.svg">
+            <a href="404.html">
             Тренерский состав
+            </a>
           </li>
         </ul>
       </nav>
-      <aside id="new-guys">
-        <h3 style="width: 254px; height: 116px;">Полезные ссылки и дополнительные материалы для новичков</h3>
+      <aside id="new-guys" class="new-guys">
+        <h3>Полезные ссылки и дополнительные материалы для новичков</h3>
         <div>
-        <img src="images/qr.svg" alt="qr" height="130px" width="130px" style="border-radius: 0px; margin: 40px auto;">
+        <img src="images/qr.svg" alt="qr" height="130px" width="130px">
         </div>
-        <div><button id="more-button">Подробнее</button></div>
+        <div><button id="more-button" class="more-button"><a href="404.html">Подробнее</a></button></div>
       </aside>
     </div>
-    <div id="nav-mobile">
-      <img src="images/hamburger_menu.svg" alt="Меню" >
+    <div id="nav-mobile" class="nav-mobile">
+      <img src="images/hamburger_menu.svg" alt="Меню">
     </div>
-    <section id="main">
 
+    <section id="main" class="main">
       <h1>Middle Odyssey</h1>
-      <h3 style="margin-top: 20px;">Программа для middle-руководителей</h4>
-      <button id="assign-button">ХОЧУ записаться!</button>
-      <div id="about-what">
+      <h3>Программа для middle-руководителей</h3>
+        <a href="404.html"><button id="assign-button" class="assign-button">ХОЧУ записаться!</button></a>
+      <div id="about-what" class="about-what">
         <h1>О чем?</h1>
         <p class="b1">Современность диктует новые правила, нам ежедневно приходится 
           реагировать на изменения и принимать решения</p>
       </div>
-      <div id="now">
+      <div id="now" class="now">
         <h1>Сейчас...</h1>
         <p class="b1">...как никогда важны сильные и компетентные лидеры. 
           Для твоего развития мы открываем набор на программу для 
           middle-руководителей «Middle Odyssey lvl 1», состоящую из 5 модулей</p>
       </div>
-      <div id="modules">
-        <div class="module" style="max-width: 282px;">
+      <div id="modules" class="modules">
+        <div class="module module1">
           <h3>Я лидер</h3>
           <p>Развитие лидерского мышления и управления своей эффективностью</p>
           <div class="module-icon">
-            <p style="color: #315B7C; margin: 0;">
+            <p class="more-link">
+              <a href="404.html">
               Подробнее
+              </a>
             </p>
             <img src="images/build-leadership-and-culture 1.svg">
           </div>
         </div>
-        <div class="module" style="max-width: 282px;">
+        <div class="module module2">
           <h3>Финансы и банкинг</h3>
           <p>Финансовые модели, отчетности и их верная трактовка</p>
           <div class="module-icon">
             <img src="images/financial-gain 1.svg">
           </div>
         </div>
-        <div class="module" style="max-width: 282px;">
+        <div class="module module3">
           <h3>Дизайн мышление</h3>
           <p>Создание продуктов и процессов, ориентированных на клиента</p>
           <div class="module-icon">
             <img src="images/enterprise-design-thinking-02 1.svg">
           </div>
         </div>
-        <div class="module" style="max-width: 508px;">
+        <div class="module module4">
           <h3>Системное мышление при принятии решений</h3>
           <p>Мышление и принятии решений без когнитивных ошибок</p>
           <div class="module-icon">
             <img src="images/path 2.svg">
           </div>
         </div>
-        <div class="module" style="max-width: 357px;">
+        <div class="module module5">
           <h3>Управление в стиле коучинг</h3>
           <p>Развитие своей команды для новых достижений</p>
           <div class="module-icon">
@@ -116,9 +133,9 @@
           </div>
         </div>
       </div>
-      <div style="margin-top: 80px;">
-        <h1 id="programm-for-you-h1"> Это программа для тебя, если ты:</h1>
-        <ul id="programm-for-you-list">
+      <div class="programm-for-you">
+        <h1 id="programm-for-you-h1" class="programm-for-you-h1"> Это программа для тебя, если ты:</h1>
+        <ul id="programm-for-you-list" class="programm-for-you-list">
           <li class="p1">middle-руководитель</li>
           <li class="p1">получил подтверждение необходимости обучения от своего руководителя,
             HR BP или HR D
@@ -126,20 +143,28 @@
           <li class="p1">сможешь совмещать обучение с рабочими задачами</li>
         </ul>
       </div>
-      <h2 id="p-ask-question">задать вопрос</h2>
-      <div id="contacts">
+      <h2 id="p-ask-question" class="p-ask-question">задать вопрос</h2>
+      <div id="contacts" class="contacts">
         <div>
           <img src="images/image 242.png">
-          <div style="margin-top: 20px;">
-            <img src="images/bxl_microsoft-teams.svg">
-            <img src="images/vscode-icons_file-type-outlook.svg">
+          <div class="contact-links">
+            <a href="mailto:example@example.com">
+              <img src="images/bxl_microsoft-teams.svg">
+            </a>
+            <a href="mailto:example@example.com">
+              <img src="images/vscode-icons_file-type-outlook.svg">
+            </a>
           </div>
         </div>
         <div>
           <img src="images/image 242.png">
-          <div style="margin-top: 20px;">
-            <img src="images/bxl_microsoft-teams.svg">
-            <img src="images/vscode-icons_file-type-outlook.svg">
+          <div class="contact-links">
+            <a href="mailto:example@example.com">
+              <img src="images/bxl_microsoft-teams.svg">
+            </a>
+            <a href="mailto:example@example.com">
+              <img src="images/vscode-icons_file-type-outlook.svg">
+            </a>
           </div>
         </div>
       </div>
