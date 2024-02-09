@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+* {
+    border-radius: 10px;
+    border-width: 0px;
+}
+img {
+    border-radius: 0%;
+}
+body {
+    background-color: #F2F7FC;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: auto;
+    padding: 20px 20px 91px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    width: 1240px;
+}
+h1 {
+    font-size: 54px;
+    font-weight: 700;
+    line-height: 54px;
+    margin: 0;
+}
+h2 {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 43.2px;
+    margin: 0;
+}
+h3 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.8px;
+    margin: 0;
+}
+button, .b1 {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #ffffff;
+}
+p, .p1 {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    font-family: 'Manrope', sans-serif;
+    color: #121212;
+    margin: 0;
+}
+.b1 {
+    margin-top: 20px;
+}
+#main-header {
+    grid-column: 2;
+    grid-row: 1;
+    margin-right: 40px;
+    display: flex;
+    align-items: center;
+    gap: 20px
+}
+#search {
+    width: 610px;
+    height: 50px;
+    padding: 12px 30.5px;
+    background-image: url('images/search.jpg');
+    background-repeat: no-repeat;
+    background-position-x: right 20px;
+    background-position-y: center;
+}
+#search::placeholder {
+    color: #B1C2CF;
+    font-size: 16px;
+    font-weight: 400;
+}
+#left {
+    grid-column: 1;
+    grid-row: 2;
+}
+#left-sidebar {
+    width: 305px;
+    height: 371px;
+    margin-left: -50px;
+    padding-right: 20px;
+}
+#left-sidebar img {
+    vertical-align: sub;
+}
+#left-sidebar ul {
+    list-style: none;
+}
+#left-sidebar ul > *:not(:first-child) {
+    margin-top: 8px;
+}
+#left-sidebar li {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+
+    color: #315B7C;
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+    width: 265px;
+    height: 46px;
+    padding: 11px 10px;
+    box-sizing: border-box;
+}
+#left-sidebar li:hover {
+    background-color: #B1C2CF;
+    color: white;
+}
+.current {
+    background-color: #7E9AB0;
+    color: white !important;
+} 
+#left-sidebar li:hover img, .current img {
+    filter: brightness(0) invert();
+}
+#new-guys {
+    width: 295px;
+    height: 452px;
+    box-sizing: border-box;
+    background-color: white;
+    padding: 20px 20px 61px;
+    margin-top: calc(80px - 11px);
+}
+#new-guys > * {
+    text-align: center;
+}
+#new-guys h3 {
+    color: #315B7C;
+    text-align: initial;
+}
+#more-button {
+    width: 168px;
+    height: 45px;
+    padding: 11px 40px 10px;
+    background-color: #315B7C;
+}
+#nav-mobile {
+    display: none;
+}
+#nav-mobile div {
+    padding: 26px 20px 35px;
+}
+#main {
+    width: calc(925px - 134px);
+    grid-column: 2;
+    grid-row: 2;
+    padding: 135px 55px 63px 80px;
+    background-image: linear-gradient(to bottom, #315B7C05 2%, #222328 100%), url("../images/trail-b3u6NeaiGkA-unsplash 1.png"); 
+    background-size: auto 1239px, auto;
+    background-color: #232328;
+    background-repeat: no-repeat;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+#main > *:not(:first-child) {
+    margin-top: 40px;
+}
+#assign-button {
+    width: 190px;
+    height: 45px;
+    background-color: #FF5561;
+    padding: 11px 25px 10px;
+}
+#about-what {
+    width: 473px;
+    align-self: flex-end;
+}
+#now {
+    width: 437px;
+}
+#modules {
+    margin-left: -60px;
+    margin-right: -35px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.module {
+    height: 200px;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+    background-color: #D6DBE0;
+    opacity: 80%;
+    /* display: flex;
+    flex-direction: column; */
+}
+.module h3 {
+    color: #315B7C;
+    margin-bottom: 20px;
+}
+.module-icon {
+    display: flex;
+    column-gap: 21px;
+    align-items: center;
+    position: absolute;
+    bottom: 20px;
+    right: 20px
+}
+#programm-for-you-h1 {
+    width: 464px;
+}
+#programm-for-you-list {
+    list-style-type: square;
+    margin: 0;
+    margin-top: 40px;
+    margin-left: -20px;
+    font-weight: 400;
+    width: 491px;
+}
+#programm-for-you-list li {
+    color: white;
+}
+#p-ask-question {
+    border-left: 10px solid #315B7C; 
+    border-radius: 0%; 
+    padding-left: 10px;
+    font-weight: 700;
+    font-size: 36px;
+}
+#contacts {
+    display: flex;
+    column-gap: 80px;
+}
+#contacts > div > img {
+    border-radius: 50%;
+    border: 6px solid #F2F7FC;
+}
+#contacts > div > div {
+    display: flex;
+    justify-content: space-around;
+}
+
+@media (max-width: 500px) {
+    body {
+        width: 320px;
+        padding: 0;
+        gap: 0;
+    }
+    .b1 {
+        margin-top: 10px;
+    }
+    #main-header {
+        display: none;
+    }
+    #left {
+        display: none;
+    }
+    #nav-mobile {
+        display: initial;
+        width: 320px;
+        height: 80px;
+        position: relative;
+        background-color: white;
+    }
+    #nav-mobile img {
+        position: absolute;
+        top: 26px;
+        right: 20px;
+    }
+    #main {
+        grid-column: 1;
+        grid-row: 2;
+        padding: 40px 20px;
+        width: 280px;
+        border-radius: 0%;
+    }
+    #gradient {
+        margin-left: -20px;
+    }
+    h1 {
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 43.2px;
+    }
+    #about-what, #now {
+        width: 280px
+    }
+    #now {
+        height: 221px;
+    }
+    #modules {
+        margin: 20px auto 0px !important;
+    }
+    #modules *:first-child > div {
+        position: initial;
+        margin-left: 119px;
+        margin-top: 10px;
+    }
+    .module {
+        padding: 20px;
+        height: auto;
+    }
+    .module h3 {
+        color: #315B7C;
+        margin-bottom: 10px;
+    }
+    .module-icon {
+        margin-right: -10px;
+        margin-bottom: -10px;
+    }
+    #programm-for-you-h1 {
+        width: 280px;
+    }
+    #programm-for-you-list {
+        width: 272px;
+        margin-top: 20px;
+    }
+    #programm-for-you-list li {
+        font-size: 12px;
+    }
+    #contacts {
+        column-gap: 40px;
+        justify-content: center;
+    }
+}
